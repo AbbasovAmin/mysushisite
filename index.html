@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Suşi sifariş</title>
+</head>
+<body>
+    <form>
+        <ul>
+            <li>
+                <label for="name">Ad:</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı daxil edin" required>
+            </li>
+            <li>
+                <label for="adress">Ünvan:</label>
+                <input type="text" id="adress" name="adress" placeholder="Çatdırılma ünvanını daxil edin" required>
+            </li>
+            <li>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon nömrənizi daxil edin" required>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email ünvanınızı daxil edin" >
+            </li>
+            <li>
+                <label for="chopsticks">Çubuq:</label>
+                <input type="number" id="chopsticks" name="chopsticks" min="1" max="60" placeholder="Çubuqların sayını daxil edin" >
+            </li>
+        </ul>
+        <label for="chopstick-type">Çubuqların növü:</label>
+        <select name="chopstick-type" id="chopstick-type">
+            <option value="adi">Adi növ</option>
+            <option value="telim">Təlim üçün</option>
+        </select>
+        <label for="sushi">Suşi seçimi:</label>
+        <select name="sushi" id="sushi" multiple>
+            <option value="maki">Maki</option>
+            <option value="nigiri">Nigiri</option>
+            <option value="sashimi">Sashimi</option>
+            <option value="california">California</option>
+            <option value="dragon">Dragon</option>
+        </select>
+        <label>
+            <input type="checkbox" name="napkins" value="yes">
+            Salfetlərə ehtiyacım var
+        </label>
+        <label for="comments">Əlavə rəy:</label>
+        <textarea name="comments" id="comments" rows="4" placeholder="Əlavə məlumat və ya istəyinizi yazın"></textarea>
+        <button type="submit">Sifariş et</button>
+    </form>
+
+</body>
+</html>
